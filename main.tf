@@ -5,6 +5,14 @@ terraform {
       version = ">= 3.43.0"
     }
   }
+
+  cloud {
+    organization = "co-lab-env"
+
+    workspaces {
+      name = "Hands-On_With_Terraform_On_Azure"
+    }
+  }
 }
 
 provider "azurerm" {
